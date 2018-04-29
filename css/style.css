@@ -2,9 +2,6 @@ head, body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    padding: 50px 20px 10px 20px;
-}
 
 body {
     margin-bottom: 120px;
@@ -12,11 +9,13 @@ body {
 
 .contact-icons {
     text-align: right;
-    padding: 5px 50px;
 }
 
-main {
-    padding: 5px 150px;
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+
 }
 
 .telephone-numbers {
@@ -28,10 +27,9 @@ main {
     text-align: center;
 }
 
-h1 {
+.page-name {
     font-family: 'Yellowtail', cursive;
-    font-size: 55pt;
-    color: #2E151B;
+    color: #2e1015;
 }
 
 .nav-link {
@@ -47,11 +45,52 @@ h3 {
     padding: 25px 0 5px 30px;    
 }
 
+.category div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .category img {
-    width: 250px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
 }
 
 .head-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+}
+
+/*Застосовується лише для комп'ютерів*/
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+      display: none;
+    }
+    body {
+        padding: 0 80px;
+    }
+    header {
+        padding-top: 20px;
+    }
+    .navbar{
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+}
+
+/*Для телефонів*/
+@media screen and (max-width: 991px) {
+    .head-container {
+        display: none;
+    }
+    h1 {
+        font-size: 33px;
+    }
 }
