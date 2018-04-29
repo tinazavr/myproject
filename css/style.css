@@ -10,7 +10,7 @@ body {
     margin-bottom: 120px;
 }
 
-#contact-icons {
+.contact-icons {
     text-align: right;
     padding: 5px 50px;
 }
@@ -47,7 +47,11 @@ h3 {
     padding: 25px 0 5px 30px;    
 }
 
-#about-me-text {
+.category img {
+    width: 250px;
+}
 
-    max-width: 1080px;
+.head-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
