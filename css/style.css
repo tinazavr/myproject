@@ -40,7 +40,6 @@ body {
     display: inline-block; 
     margin: 0; 
 }
-
 h3 {
     padding: 25px 0 5px 30px;    
 }
@@ -90,7 +89,13 @@ h3 {
     .head-container {
         display: none;
     }
-    h1 {
+    a.page-name {
         font-size: 33px;
+    }
+    .contacts form label {
+        width: 100%;
+    }
+    form, p {
+        padding: 0 10px;
     }
 }
